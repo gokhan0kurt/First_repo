@@ -24,7 +24,7 @@ public class String_manipulation {
 
         int flag = 0;
 
-        Random rnd = new Random(9);
+
 
         if ((password.charAt(0) >= 'a' && password.charAt(0) <= 'z')) {
             flag++;
