@@ -75,7 +75,11 @@ public class ATM_Sorusu {
                 menuEkrani();
 
             case 2:
-
+                System.out.print("Yatirmak istediginiz tutari giriniz : ");
+                int eklenecekTutar = sc.nextInt();
+                System.out.println("\nAcilan bolmeden parayi yatiriniz...");
+                bakiye +=eklenecekTutar;
+                System.out.println("\nGuncel bakiyeniz : "+bakiye);
                 break;
 
             case 3:
