@@ -71,8 +71,8 @@ public class ATM_Sorusu {
 
         switch (islemNo) {
             case 1:
-                System.out.println("Guncel bakiye durumunuz : " + bakiye);
-                break;
+                System.out.println("\nGuncel bakiye durumunuz : " + bakiye);
+                menuEkrani();
 
             case 2:
 
