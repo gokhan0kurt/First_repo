@@ -137,8 +137,8 @@ public class ATM_Sorusu {
                 System.out.println("Uzgunum, islem icin bakiyeniz yetersiz !");
             }else {
                 bakiye -= gonderilecekMiktar;
-                System.out.println(ibanNo+" nolu hesaba "+gonderilecekMiktar+ " basariyla gonderildi");
-                System.out.println("Para gonderim isleminden sonra kalan bakiyeniz : " + bakiye);
+                System.out.println("\n"+ibanNo+" nolu hesaba "+gonderilecekMiktar+ " TL basariyla gonderildi");
+                System.out.println("\nPara gonderim isleminden sonra kalan bakiyeniz : " + bakiye);
                 menuEkrani();
             }
         }
