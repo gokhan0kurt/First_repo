@@ -106,9 +106,14 @@ public class ATM_Sorusu {
         System.out.print("Lutfen cekmek istediginiz miktari giriniz : ");
         int cekilecekMiktar = sc.nextInt();
 
-        if (bakiye < cekilecekMiktar) System.out.println("Uzgunum, islem icin bakiyeniz yetersiz !");
-        bakiye -= cekilecekMiktar;
-        System.out.println("Para Cekme isleminiz tamamlandi, Kalan bakiyeniz : " + bakiye);
+        if (bakiye < cekilecekMiktar){
+            System.out.println("\nUzgunum, islem icin bakiyeniz yetersiz !");
+            menuEkrani();
+        }else {
+            bakiye -= cekilecekMiktar;
+            System.out.println("Para Cekme isleminiz tamamlandi, Kalan bakiyeniz : " + bakiye);
+        }
+
 
     }
 
