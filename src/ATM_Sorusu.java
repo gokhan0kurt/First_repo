@@ -80,6 +80,7 @@ public class ATM_Sorusu {
                 System.out.println("\nAcilan bolmeden parayi yatiriniz...");
                 bakiye +=eklenecekTutar;
                 System.out.println("\nGuncel bakiyeniz : "+bakiye);
+                menuEkrani();
                 break;
 
             case 3:
