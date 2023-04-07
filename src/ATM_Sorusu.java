@@ -133,9 +133,13 @@ public class ATM_Sorusu {
             menuEkrani();
 
         } else {
-            if (bakiye < gonderilecekMiktar) System.out.println("Uzgunum, islem icin bakiyeniz yetersiz !");
-            bakiye -= gonderilecekMiktar;
-            System.out.println("Para gonderim isleminden sonra kalan bakiyeniz : " + bakiye);
+            if (bakiye < gonderilecekMiktar){
+                System.out.println("Uzgunum, islem icin bakiyeniz yetersiz !");
+            }else {
+                bakiye -= gonderilecekMiktar;
+                System.out.println("Para gonderim isleminden sonra kalan bakiyeniz : " + bakiye);
+                menuEkrani();
+            }
         }
     }
 
